@@ -1,0 +1,17 @@
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\bin\Debug\Hades.exe.config
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\bin\Debug\Hades.exe
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\bin\Debug\Hades.pdb
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\bin\Debug\MySql.Data.dll
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\bin\Debug\MySql.Web.dll
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\bin\Debug\MySql.Data.xml
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\bin\Debug\MySql.Web.xml
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\obj\Debug\Hades.csprojResolveAssemblyReference.cache
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\obj\Debug\Hades.HomePage.resources
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\obj\Debug\Hades.Register.resources
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\obj\Debug\Hades.Properties.Resources.resources
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\obj\Debug\Hades.RegisterActivities.resources
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\obj\Debug\Hades.SelectActivities.resources
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\obj\Debug\Hades.csproj.GenerateResource.Cache
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\obj\Debug\Hades.csproj.CoreCompileInputs.cache
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\obj\Debug\Hades.exe
+C:\Users\216110108\Documents\Visual Studio 2017\Projects\Hades\Hades\obj\Debug\Hades.pdb
