@@ -49,7 +49,6 @@
             this.Subject1 = new System.Windows.Forms.GroupBox();
             this.del1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.Save = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.AddSubject.SuspendLayout();
             this.Subject3.SuspendLayout();
@@ -147,6 +146,7 @@
             this.del3.TabIndex = 1;
             this.del3.Text = "Delete";
             this.del3.UseVisualStyleBackColor = false;
+            this.del3.Click += new System.EventHandler(this.del3_Click);
             // 
             // listBox3
             // 
@@ -178,6 +178,7 @@
             this.del5.TabIndex = 1;
             this.del5.Text = "Delete";
             this.del5.UseVisualStyleBackColor = false;
+            this.del5.Click += new System.EventHandler(this.del5_Click);
             // 
             // listBox5
             // 
@@ -209,6 +210,7 @@
             this.del4.TabIndex = 1;
             this.del4.Text = "Delete";
             this.del4.UseVisualStyleBackColor = false;
+            this.del4.Click += new System.EventHandler(this.del4_Click);
             // 
             // listBox4
             // 
@@ -240,6 +242,7 @@
             this.del2.TabIndex = 1;
             this.del2.Text = "Delete";
             this.del2.UseVisualStyleBackColor = false;
+            this.del2.Click += new System.EventHandler(this.del2_Click);
             // 
             // listBox2
             // 
@@ -271,6 +274,7 @@
             this.del1.TabIndex = 1;
             this.del1.Text = "Delete";
             this.del1.UseVisualStyleBackColor = false;
+            this.del1.Click += new System.EventHandler(this.del1_Click);
             // 
             // listBox1
             // 
@@ -281,26 +285,12 @@
             this.listBox1.Size = new System.Drawing.Size(188, 100);
             this.listBox1.TabIndex = 0;
             // 
-            // Save
-            // 
-            this.Save.BackColor = System.Drawing.Color.Black;
-            this.Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Save.ForeColor = System.Drawing.Color.White;
-            this.Save.Location = new System.Drawing.Point(517, 8);
-            this.Save.Name = "Save";
-            this.Save.Size = new System.Drawing.Size(89, 34);
-            this.Save.TabIndex = 2;
-            this.Save.Text = "Save";
-            this.Save.UseVisualStyleBackColor = false;
-            this.Save.Click += new System.EventHandler(this.Save_Click);
-            // 
             // RegisterActivities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(654, 432);
-            this.Controls.Add(this.Save);
             this.Controls.Add(this.Subject1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dateRA);
@@ -343,6 +333,5 @@
         private System.Windows.Forms.GroupBox Subject3;
         private System.Windows.Forms.Button del3;
         private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.Button Save;
     }
 }

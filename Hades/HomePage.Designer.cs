@@ -142,6 +142,7 @@
             this.signUp.TabIndex = 1;
             this.signUp.Text = "Signup Sheet";
             this.signUp.UseVisualStyleBackColor = false;
+            this.signUp.Click += new System.EventHandler(this.signUp_Click);
             // 
             // exportDate
             // 

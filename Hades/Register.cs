@@ -13,7 +13,7 @@ using MySql.Data.MySqlClient;
 namespace Hades
 {
     public partial class Register : Form
-    {
+    {   //MySql access for database
         private string cs = "server=localhost;userid=root;password='';database=icamper";
         MySqlConnection conn = null;
         MySqlDataReader reader = null;
@@ -63,7 +63,7 @@ namespace Hades
 
         private void New_Click(object sender, EventArgs e)
         {
-            //Save sesion data into table camper database, take the input from combobox
+            //Save sesion data into table camper database, take the input from combobox, new session can be save
             String sql = "INSERT INTO camper(CSESSION) VALUES('" + this.Session.Text + "')";
             try
             {
@@ -92,7 +92,7 @@ namespace Hades
 
         private void Session_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+           //Display of the registered session from HomePage
         }
     }
 }

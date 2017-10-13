@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateSA = new System.Windows.Forms.DateTimePicker();
             this.date = new System.Windows.Forms.Label();
             this.names = new System.Windows.Forms.ComboBox();
             this.name = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dateSA);
             this.groupBox1.Controls.Add(this.date);
             this.groupBox1.Controls.Add(this.names);
             this.groupBox1.Controls.Add(this.name);
@@ -71,13 +71,13 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // dateTimePicker1
+            // dateSA
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(11, 251);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(302, 30);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dateSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateSA.Location = new System.Drawing.Point(11, 251);
+            this.dateSA.Name = "dateSA";
+            this.dateSA.Size = new System.Drawing.Size(302, 30);
+            this.dateSA.TabIndex = 5;
             // 
             // date
             // 
@@ -116,6 +116,7 @@
             this.bunks.Name = "bunks";
             this.bunks.Size = new System.Drawing.Size(302, 33);
             this.bunks.TabIndex = 1;
+            this.bunks.SelectedIndexChanged += new System.EventHandler(this.bunks_SelectedIndexChanged);
             // 
             // bunk
             // 
@@ -164,6 +165,7 @@
             this.Save.TabIndex = 2;
             this.Save.Text = "Save";
             this.Save.UseVisualStyleBackColor = false;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // Subject1
             // 
@@ -180,10 +182,13 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
+            this.listBox1.Items.AddRange(new object[] {
+            "Tennis"});
             this.listBox1.Location = new System.Drawing.Point(6, 31);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(188, 100);
             this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Subject3
             // 
@@ -200,6 +205,8 @@
             // 
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 16;
+            this.listBox3.Items.AddRange(new object[] {
+            "Painting"});
             this.listBox3.Location = new System.Drawing.Point(6, 31);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(188, 100);
@@ -220,6 +227,8 @@
             // 
             this.listBox5.FormattingEnabled = true;
             this.listBox5.ItemHeight = 16;
+            this.listBox5.Items.AddRange(new object[] {
+            "Acrobatic"});
             this.listBox5.Location = new System.Drawing.Point(6, 31);
             this.listBox5.Name = "listBox5";
             this.listBox5.Size = new System.Drawing.Size(188, 100);
@@ -240,6 +249,8 @@
             // 
             this.listBox4.FormattingEnabled = true;
             this.listBox4.ItemHeight = 16;
+            this.listBox4.Items.AddRange(new object[] {
+            "Basketball"});
             this.listBox4.Location = new System.Drawing.Point(6, 31);
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(188, 100);
@@ -260,6 +271,8 @@
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 16;
+            this.listBox2.Items.AddRange(new object[] {
+            "Dance"});
             this.listBox2.Location = new System.Drawing.Point(6, 31);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(188, 100);
@@ -291,7 +304,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateSA;
         private System.Windows.Forms.Label date;
         private System.Windows.Forms.ComboBox names;
         private System.Windows.Forms.Label name;

@@ -19,6 +19,8 @@ namespace Hades
 
         private Register reg = new Register();
 
+        public static string SelectedItem;
+
         public HomePage()
         {
             InitializeComponent();
@@ -27,6 +29,7 @@ namespace Hades
         private void registerEdit_Click(object sender, EventArgs e)
         {   
             reg.Show(); //Link to the register form
+            reg.Session.Text = sessions.Text; //Suppose to display session detail on Register form as well
         }
 
         private void chooseActivities_Click(object sender, EventArgs e)
@@ -78,8 +81,22 @@ namespace Hades
         }
 
         private void HomePage_Click(object sender, EventArgs e)
-        {
+        {   //Suppose to change the background color
             this.BackColor = System.Drawing.Color.DarkBlue;
+        }
+
+        private void signUp_Click(object sender, EventArgs e)
+        {
+            /*foreach (Excel.Worksheet ws in wb.Worksheets)
+            {
+                Excel.PageSetup ps = (Excel.PageSetup)ws.PageSetup;
+                ws.PageSetup.Orientation = Excel.XlPageOrientation.xlLandscape;
+                ws.PageSetup.Order = Excel.XlOrder.xlDownThenOver;
+                ws.PageSetup.FitToPagesWide = 1;
+                ws.PageSetup.FitToPagesTall = 50;
+                ws.PageSetup.Zoom = false;
+            }
+            wb.Worksheets.PrintOutEx();*/
         }
     }
 }
